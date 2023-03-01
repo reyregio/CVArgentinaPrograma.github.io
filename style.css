@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+:root{
+    --amarillo:#F8C906;
+    --negrish:#2B2D2C;
+    --grey:#CBC8C5;
+    --white:#fff;
+    
+}
+html{
+    font-size: 12px;
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--grey);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 3000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container .header{
+    width: 100%;
+    height: 150px;
+    background-color: var(--amarillo);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-text{
+    color: white;
+    width: 60%;
+    margin: auto;
+}
+.header-text p{
+    font-size: 40px;
+    font-weight: 450;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    width: 30%;
+    background-color: gray;
+}
+
+.card{
+    text-align: center;
+    background-color:white;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 2rem;
+    width: 100%;
+    box-shadow: 0 2px 12px 3px rgba(53, 53, 53 0.1);
+    border-radius: 4px;
+}
+.card-head{
+    position: relative;
+    height: 130px;
+}
+
+.user-image img{
+    width: 200px;
+    height: 200px;
+}
+.user-image{
+    position: RELATIVE;
+    top: 20px;
+    left: 390px;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+.user-image:hover{
+    filter: grayscale(0%) ;
+
+}
+.user-post-adress{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-post-adress > div{
+    padding: 0 2 rem;
+}
+.user-post-adress > div span{
+    display: block;
+}
+.user-post-adress > div span:first-child{
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--negrish);
+    opacity: 0.7;
+    margin-right: 2rem;
+    
+}
+.user-post-adress > div span:last-child{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--negrish);
+    margin-top: 0.7rem;
+}
+.card-body{
+    padding: 0 3rem 3.8rem 3rem;
+}
+.user-name{
+    padding: 3rem 0 1.6rem 0;
+    font-size: 1.9rem;
+    color: var(--negrish);
+    
+}
+.user-name-title{
+    font-weight: 700;
+}
+.user-name-full{
+    font-weight: 600;
+}
+.user-age{
+    color: var(--negrish);
+}
+.user-location-adress span{
+    color: var(--negrish);
+    font-size: 1.8rem;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+.card-foot{
+    padding-top: 2.4rem;
+    margin: 2.4rem 3rem;
+    border-top: 1px solid var(--amarillo);
+}
+
+.card-foot a:hover{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.user-contact-info{
+    display: inline-flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    font-size: 1;
+    font-weight: 500;
+    padding-right: 1.5rem;
+    
+}
+.user-contact-info span i{
+    color: var(--amarillo);
+    
+    
+}
+.user-contact-info span{
+    color: var(--negrish);
+    justify-content: space-between;
+
+}
+
+
+@media screen and (max-width: 490px){
+    .container{
+        margin: 4rem auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        
+    }
+    .card-head a{
+        position: relative;
+        left: 0;
+        top: 10rem;
+    }
+    .user-post-adress{
+        flex-direction: column;
+        
+    }
+    .user-post-adress > div{
+        margin-bottom: 1.4rem;
+    }
+    .user-contact-info{
+        flex-direction: column;
+    }
+    .user-contact-info span:first-child{
+        margin-bottom:2rem ;
+        
+    }
+}
+
+button{
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 50px 0 50px 140px;
+    background-color: var(--grey);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .5s;
+    position: absolute;
+    top: 120%;
+    right: 10%;
+}
+
+button:hover{
+    background-color: var(--amarillo);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    color: var(--negrish);
+}
+
+@media print{
+    body *{
+        visibility: hidden;
+    }
+    .container *{
+        visibility: visible;
+    }
+}
