@@ -17,11 +17,13 @@ html{
 }
 body{
     font-size: 1.6rem;
-    background-color: var(--grey);
+    background-color: whitesmoke;
     min-height: 100vh;
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
 }
 
 .container{
@@ -31,12 +33,12 @@ body{
 }
 
 .container .header{
-    width: 100%;
+    width: 335%;
     height: 150px;
     background-color: var(--amarillo);
     display: flex;
-    align-items: center;
     position: relative;
+    border-radius: 15px;
 }
 .header-text{
     color: white;
@@ -52,10 +54,26 @@ body{
     flex-wrap: wrap;
 }
 .left{
-    width: 30%;
-    background-color: gray;
-}
+    width: 85%;
+    background-color: var(--grey);
+    height: 200%;
+    border-radius: 10px;
 
+}
+.left .Experiencia{
+    margin-top: 2px;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.Experiencia h2{
+    font-size: 25px;
+    font-weight: 1000;
+    margin: 15px 0;
+}
+.Experiencia p{
+    font-size: 18px;
+    margin: 10px 0;
+}
 .card{
     text-align: center;
     background-color:white;
@@ -76,12 +94,12 @@ body{
     height: 200px;
 }
 .user-image{
-    position: RELATIVE;
-    top: 20px;
-    left: 390px;
-    transform: translate(-50%,-50%);
-    width: 150px;
-    height: 150px;
+    position: absolute;
+    top: -150px;
+    left: 250%;
+    /* transform: translate(-50%,-50%); */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid white;
@@ -171,35 +189,6 @@ body{
     color: var(--negrish);
     justify-content: space-between;
 
-}
-
-
-@media screen and (max-width: 490px){
-    .container{
-        margin: 4rem auto;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        
-    }
-    .card-head a{
-        position: relative;
-        left: 0;
-        top: 10rem;
-    }
-    .user-post-adress{
-        flex-direction: column;
-        
-    }
-    .user-post-adress > div{
-        margin-bottom: 1.4rem;
-    }
-    .user-contact-info{
-        flex-direction: column;
-    }
-    .user-contact-info span:first-child{
-        margin-bottom:2rem ;
-        
-    }
 }
 
 button{
