@@ -204,7 +204,7 @@ button.copy {
 
 #print-button{ /* display: table-column; */
     position: fixed;
-    margin-top: 50%;
+    margin-top: 40%;
     border: none;
     color: white;
     background: var(--amarillo);
