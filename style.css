@@ -52,16 +52,17 @@ body{
 .content{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 15%;
 }
 .left{
     width: 85%;
     background-color: var(--grey);
     height: 200%;
     border-radius: 10px;
-
+    
 }
 .left .Experiencia{
-    margin-top: 2px;
+    margin-top: 10%;
     padding: 15px;
     margin-bottom: 5px;
 }
@@ -70,15 +71,45 @@ body{
     font-weight: 1000;
     margin: 15px 0;
 }
+a{
+    color:white;
+    text-decoration:dashed;
+}
+
+a:link {
+    color:var(--negrish);
+}
+
+a:visited {
+    color: var(--white);
+}
+a:hover {
+    color: var(--amarillo);
+}
+a:active {
+    color: blue;
+}
+
 .Experiencia p{
     font-size: 18px;
     margin: 10px 0;
+}
+ul{
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+li{
+    list-style-type:disc;
+}
+hr{
+    border-style: groove;
+    
 }
 .card{
     text-align: center;
     background-color:white;
     max-width: 500px;
-    margin: auto;
+    margin-top: -30px;
     padding-bottom: 2rem;
     width: 100%;
     box-shadow: 0 2px 12px 3px rgba(53, 53, 53 0.1);
@@ -86,7 +117,7 @@ body{
 }
 .card-head{
     position: relative;
-    height: 130px;
+    height: 90px;
 }
 
 .user-image img{
@@ -95,7 +126,7 @@ body{
 }
 .user-image{
     position: absolute;
-    top: -150px;
+    top: -118px;
     left: 250%;
     /* transform: translate(-50%,-50%); */
     width: 200px;
@@ -110,11 +141,11 @@ body{
 }
 .user-image:hover{
     filter: grayscale(0%) ;
-
+    
 }
 .user-post-adress{
     padding: 1rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -172,12 +203,13 @@ body{
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .user-contact-info{
-    display: inline-flex;
+    /* display: inline-flex;
     justify-content: space-between;
+    
+    padding-right: 1.5rem; */
     opacity: 0.8;
     font-size: 1;
     font-weight: 500;
-    padding-right: 1.5rem;
     
 }
 .user-contact-info span i{
@@ -187,38 +219,15 @@ body{
 }
 .user-contact-info span{
     color: var(--negrish);
-    justify-content: space-between;
-
+    display:inline-flex;
+    
 }
 
-button{
-    font-size: 20px;
-    padding: 5px 10px;
-    margin: 50px 0 50px 140px;
-    background-color: var(--grey);
-    color: var(--white);
+
+
+button.copy {
     border: none;
-    outline: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: .5s;
-    position: absolute;
-    top: 120%;
-    right: 10%;
-}
-
-button:hover{
-    background-color: var(--amarillo);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    color: var(--negrish);
-}
-
-@media print{
-    body *{
-        visibility: hidden;
-    }
-    .container *{
-        visibility: visible;
-    }
+    color: white;
+    background-color: white;
+    margin: 3px;
 }

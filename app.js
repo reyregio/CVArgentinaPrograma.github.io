@@ -43,8 +43,8 @@ class RandomUser{
         <div class="card-foot">
         <div class="user-contact-info">
         
-        <span> <i class="fas fa-envelope"> </i> ${user.email} </span>
-        <span> <i class="fa-solid fa-mobile-button"> </i> ${user.cell} </span>
+        <span> <i class="fas fa-envelope"> </i> ${user.email} <button class="copy"><i class="fa-regular fa-copy"></i></button></span>
+        <span> <i class="fa-solid fa-mobile-button"> </i> ${user.cell} <button class="copy"><i class="fa-regular fa-copy"></i></button></span>
         </div>
         </div>`
     }    
