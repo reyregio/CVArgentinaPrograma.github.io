@@ -23,7 +23,7 @@ body{
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    align-items: center;
+    
 }
 
 .container{
@@ -52,19 +52,19 @@ body{
 .content{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15%;
+    margin-top: 14%;
 }
 .left{
     width: 85%;
     background-color: var(--grey);
-    height: 200%;
+    height: 100%;
     border-radius: 10px;
     
 }
 .left .Experiencia{
-    margin-top: 10%;
+    
     padding: 15px;
-    margin-bottom: 5px;
+    
 }
 .Experiencia h2{
     font-size: 25px;
@@ -72,8 +72,9 @@ body{
     margin: 15px 0;
 }
 a{
-    color:white;
-    text-decoration:dashed;
+    color: white;
+    text-decoration: revert;
+    margin-left: 70%;
 }
 
 a:link {
@@ -102,8 +103,10 @@ li{
     list-style-type:disc;
 }
 hr{
-    border-style: groove;
-    
+    border-style: solid;
+    color: #8080803b;
+    border-radius: 3px;
+    margin: 20px;    
 }
 .card{
     text-align: center;
@@ -143,35 +146,7 @@ hr{
     filter: grayscale(0%) ;
     
 }
-.user-post-adress{
-    padding: 1rem;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-.user-post-adress > div{
-    padding: 0 2 rem;
-}
-.user-post-adress > div span{
-    display: block;
-}
-.user-post-adress > div span:first-child{
-    font-weight: 700;
-    font-size: 2rem;
-    color: var(--negrish);
-    opacity: 0.7;
-    margin-right: 2rem;
-    
-}
-.user-post-adress > div span:last-child{
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: var(--negrish);
-    margin-top: 0.7rem;
-}
-.card-body{
-    padding: 0 3rem 3.8rem 3rem;
-}
+
 .user-name{
     padding: 3rem 0 1.6rem 0;
     font-size: 1.9rem;
@@ -203,10 +178,6 @@ hr{
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 .user-contact-info{
-    /* display: inline-flex;
-    justify-content: space-between;
-    
-    padding-right: 1.5rem; */
     opacity: 0.8;
     font-size: 1;
     font-weight: 500;
@@ -214,20 +185,44 @@ hr{
 }
 .user-contact-info span i{
     color: var(--amarillo);
-    
-    
 }
 .user-contact-info span{
     color: var(--negrish);
     display:inline-flex;
-    
 }
-
-
 
 button.copy {
     border: none;
-    color: white;
-    background-color: white;
+    background: white;
     margin: 3px;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 10px;
 }
+
+#print-button{ /* display: table-column; */
+    position: fixed;
+    margin-top: 50%;
+    border: none;
+    color: white;
+    background: var(--amarillo);
+    padding: 5px 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#print-button:hover{
+    filter:brightness(110%);
+    
+}
+
+@media print {
+    /* Hide print button when printing */
+    #print-button {
+        display: none;
+    }
+}
+
