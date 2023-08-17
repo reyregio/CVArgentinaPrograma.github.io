@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-.map-responsive {
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*.map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: center;
@@ -15,9 +15,8 @@
 }
 
 .map-title {
-  text-align: center; /* Centra el texto */
-  margin-top: 20px; /* Añade un margen superior */
-}
+  text-align: center; 
+  margin-top: 20px;
 h1{
 font-family: Montserrat;
 background-color: beige;
@@ -38,4 +37,4 @@ body{
   width: 100%;
   height: 100%;
   background-color:hsl(30, 97%, 76%);
-}
+} */
