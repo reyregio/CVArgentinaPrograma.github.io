@@ -68,3 +68,49 @@
     background-color: var(--body-color);
     color: var(--text-color);
   }
+  h1, h2, h3, h4{
+    color:var(--title-color);
+    font-weight: var(--font-bold);
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*====== THEME==========*/
+  
+  /* =========== VARIABLES DARK THEME=========*/
+  
+  /*======== Reusable css classes ========*/
+  
+  .container{
+    max-width:1120px ;
+    margin-inline:1.5rem;
+  }
+  
+  .grid{
+    display: grid;
+    gap:1.5rem;
+  }
+  
+  .section{
+    padding-block:4rem 2rem;
+  }
+  
+  .section__title-1,
+  .section__title-2{
+    position: relative;
+    font-size: var(--h1-font-size);
+    width: max-content;
+    margin: .75rem auto 2rem;
+  }
