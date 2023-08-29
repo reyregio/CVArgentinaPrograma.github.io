@@ -1,7 +1,18 @@
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,500&family=Open+Sans:wght@300;500&display=swap');
-.menu{
-  font-family:Bricolage Grotesque;
-}
-img{
-  size: 20px;
+/*======================VARIABLES CSS===========*/
+
+:root{
+  --header-height:3.5 rem;
+  /*Colors*/
+  --first-color:hsl(14,98%,50%);
+  --black-color:hsl(0,0%,0%);
+  --black-color-light:hsl(0,0%,40%);
+  --white-color:hsl(0,0%,95%); 
+  --title-color:hsl(0,0%,0%);
+  --text-color:hsl(0,0%,35%);
+  --text-color-ligth:hsl(0,0%,64%);
+  --body-color:hsl(0,0%,87%);
+  --container-color:hsl(0,0%,83%);
+  
+  /*Font and typography*/
 }
