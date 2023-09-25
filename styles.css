@@ -211,7 +211,7 @@
   @media screen and (max-width :1150px){
     .nav__menu{
       position: fixed;
-      top: 0;
+      top: -100%;
       left: 0;
       background-color:hsla(0, 0%, 0%, .75) ;
       width: 100%;
@@ -256,9 +256,44 @@
     left: initial;
     right: -4rem;
   }
-
+  
   .nav__list{
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
+  }
+  
+  .nav__link{
+    position:relative ;
+    color: var(--text-color-ligth);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semibold);
+    transition: color .3s;
+  }
+  
+  .nav__link::after{
+    content:'';
+    width: 25%;
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .3s;
+  }
+
+  .nav__link:hover{
+    color: var(--white-color);
+  }
+
+  .nav__link:hover::after{
+    width: 25%;
+  }
+
+  .nav__close{
+    position: fixed;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
   }

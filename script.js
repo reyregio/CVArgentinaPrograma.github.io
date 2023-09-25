@@ -1,8 +1,19 @@
-// window.addEventListener('resize', function() {
-//   var mapContainer = document.getElementById('map-container');
-//   var iframe = mapContainer.querySelector('iframe');
-//   iframe.style.height = mapContainer.offsetWidth * 0.5625 + 'px'; /* 16:9 aspect ratio (change to your needs) */
-// });
+// ========================== SHOW MENU ===================
+const navMenu=document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close')
 
-// window.dispatchEvent(new Event('resize'));
-    
+// ==========MENU SHOW=================
+// Validate if constant exists 
+if(navToggle){
+    navToggle.addEventListener('click', ()=>{
+        navMenu.classList.add("show-menu")
+    })  
+}
+
+// ==========MENU HIDDEN=================
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+        })
+        }
