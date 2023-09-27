@@ -218,7 +218,7 @@
       padding-block:1.8rem 5rem ;
       text-align: center;
       backdrop-filter: blur(8px);
-      transition: top .4;
+      transition: top .4s;
     }
   }
   
@@ -296,4 +296,10 @@
     top: 1rem;
     right: 1.5rem;
     cursor: pointer;
+  }
+
+  /* Show Menu*/
+
+  .show-menu{
+    top: 0;
   }
