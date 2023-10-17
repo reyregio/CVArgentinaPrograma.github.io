@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
+
 <body>
   <!-- ============HEADER=========== -->
   <header class="header" id="header">
@@ -286,13 +287,13 @@
             </div>
             
             <div class="contact__box contact__area">
-              <textarea name="user__message" id="message" class="contact__input" required
-              placeholder="Message"></textarea>
+              <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+              
               <label for="message" class="contact__label">Message</label>
             </div>
             
-            <p class="contact__message" id="contact-message"></p>
-
+            <p class="contact__message" id="contact-message">Message sent successfully ✅</p>
+            
             <button type="submit" class="contact__button button">
               <i class="ri-send-plane-line"></i> Send Message
             </button>
@@ -317,18 +318,32 @@
         </div>
       </div>
     </section>
-
+    
   </main>
-  
-  <footer class="footer"></footer>
+  <!-- ============================FOOTER  ============================ -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <ul class="footer__links">
+        <li>
+          <a href="#about" class="footer__link">About</a>
+        </li>
+        <li>
+          <a href="#services" class="footer__link">Services</a>
+        </li>
+        <li>
+          <a href="#projects" class="footer__link">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   
   <script src=""></script>
   <!-- ============================== EMail JS============================= -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!-- ============================== main js============================= -->
-
+  <!-- ============================== main js============================= -->
+  
   <script src="script.js"></script>
-
+  
 </body>
 
 </html>
