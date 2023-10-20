@@ -28,7 +28,7 @@
         
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link"></a>
+            <a href="#home" class="nav__link active-link"></a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About Me</a>
@@ -47,6 +47,9 @@
         </div>
       </div>
       <div class="nav__buttons">
+        <!-- theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
         <!-- Toggle button  -->
         <div class="nav__toggle" id="nav-toggle">
           <i class="ri-menu-4-line"></i>
@@ -292,7 +295,7 @@
               <label for="message" class="contact__label">Message</label>
             </div>
             
-            <p class="contact__message" id="contact-message">Message sent successfully ✅</p>
+            <!-- <p class="contact__message" id="contact-message">Message sent successfully ✅</p> -->
             
             <button type="submit" class="contact__button button">
               <i class="ri-send-plane-line"></i> Send Message
@@ -339,6 +342,11 @@
       </span>
     </div>
   </footer>
+  <!-- ============================== SCROLL JS============================= -->
+  <a href="" class="scrollup show-scroll" id="scroll-up">
+    <i class="ri-arrow-up-s-line"></i>
+  </a>
+  
   
   <script src=""></script>
   <!-- ============================== EMail JS============================= -->
